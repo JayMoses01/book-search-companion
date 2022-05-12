@@ -14,8 +14,6 @@ const { bookId } = useParams();
 
 
 
-
-
 const SavedBooks = () => {
   const [userData, setUserData] = useState({});
 
@@ -47,15 +45,9 @@ const SavedBooks = () => {
   //   getUserData();
   // }, [userDataLength]);
 
-// JRM: useQuery() Hook to execute GET_ME query and save it to a variable named userData.
-
-
-
-
-
-
-
-
+// JRM: useQuery() Hook to execute GET_ME query and save it to a variable named userData. I added 51-52.
+const { loading, data } = useQuery(GET_ME);
+userData(data);
 
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
