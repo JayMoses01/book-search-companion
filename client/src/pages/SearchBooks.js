@@ -97,11 +97,7 @@ const SearchBooks = () => {
       // pass URL parameter
       variables: { bookId: bookId },
 
-      }
-
-
-
-
+      });
     // get token
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
@@ -122,14 +118,6 @@ const SearchBooks = () => {
       console.error(err);
     }
   };
-
-
-
-
-
-
-
-  });
 
   const book = data?.book || {};
 
