@@ -8,7 +8,7 @@ import { removeBookId } from '../utils/localStorage';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { GET_ME } from '../utils/mutations';
+import { GET_ME } from '../utils/queries';
 
 const { bookId } = useParams();
 
